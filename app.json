@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "00c3cd7d-b289-441c-92e9-52c597cd57db"
+      }
+    },
+    "owner": "maxthestranger"
   }
 }
