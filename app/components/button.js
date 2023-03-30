@@ -1,5 +1,5 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 import { useFonts, Poppins_600SemiBold } from '@expo-google-fonts/poppins';
 
 export default function Button({ onPress, extraStyle, icon, title }) {
@@ -13,7 +13,7 @@ export default function Button({ onPress, extraStyle, icon, title }) {
     }
   return (
     <Pressable style={[styles.button, extraStyle?.btn]} onPress={onPress}>
-      <MaterialCommunityIcons
+      <AntDesign
         name={icon?.name}
         size={18}
         color={icon?.color}

@@ -1,7 +1,7 @@
 import { StyleSheet, View, TextInput, Text } from "react-native";
 import { useFonts, Poppins_700Bold } from "@expo-google-fonts/poppins";
 
-export default function Input({ placeholder, label }) {
+export default function Input({ placeholder, label, onChangeText }) {
   // Load fonts
   let [fontsLoaded] = useFonts({
     Poppins_700Bold,
@@ -17,6 +17,7 @@ export default function Input({ placeholder, label }) {
         style={styles.input}
         placeholder={placeholder}
         placeholderTextColor="#aaa"
+        onChangeText={onChangeText}
       />
     </View>
   );
@@ -24,7 +25,7 @@ export default function Input({ placeholder, label }) {
 
 const styles = StyleSheet.create({
   formGroup: {
-    marginBottom: 20,
+    marginBottom: 10,
   },
   label: {
     fontSize: 16,

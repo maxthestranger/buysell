@@ -6,7 +6,7 @@ const blurhash =
 export default function Picha({ src, extraStyles }) {
   return (
     <Image
-      source={require(`../assets/${src}`)}
+      source={require(`../assets/welcome.png`)}
       placeholder={blurhash}
       contentFit="cover"
       transition={1000}
